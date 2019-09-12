@@ -24,4 +24,4 @@ TODO: Write usage instructions here
 
 ## Versioning & Dependencies
 
-This project depends on `bixby`, which depends on `rubocop` and `rubocop-rspec`. `bixby` supports versions its dependent gems pessimistically.
+This project depends on `bixby`, which depends on `rubocop` and `rubocop-rspec`. `bixby` supports versions its dependent gems pessimistically. Therefore we also support version of `bixby` pessimistically. Once we get a release candidate we will match major version numbers with `bixby` major version numbers.

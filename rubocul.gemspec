@@ -11,5 +11,7 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files`.split($OUTPUT_RECORD_SEPARATOR)
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency "bundler", "~> 2.0"
+  spec.add_development_dependency 'bundler', '~> 2.0'
+
+  spec.add_dependency 'bixby', '2.0.0.pre.beta1'
 end
