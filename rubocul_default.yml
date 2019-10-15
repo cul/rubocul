@@ -4,3 +4,6 @@ inherit_gem:
 # Turning off until we can support multiple enforced styles (key and table). This is available in newer version of rubocop
 Layout/AlignHash:
   Enabled: false
+
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining
