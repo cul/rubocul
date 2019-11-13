@@ -11,3 +11,8 @@ Layout/IndentHash:
 
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
+
+# Bixby does not have this cop turned on by default, though it is enabled in the default Rubocop config.
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
