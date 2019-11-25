@@ -9,5 +9,8 @@ Layout/AlignHash:
 Layout/IndentHash:
   EnforcedStyle: consistent
 
+RSpec/MessageSpies:
+  Enabled: false
+
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
