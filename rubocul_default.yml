@@ -11,3 +11,7 @@ Layout/IndentHash:
 
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
+  
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
