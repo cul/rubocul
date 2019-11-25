@@ -11,3 +11,6 @@ Layout/IndentHash:
 
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
