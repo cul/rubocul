@@ -1,6 +1,15 @@
 inherit_gem:
   bixby: bixby_default.yml
 
+inherit_mode:
+  merge:
+    - Exclude
+    
+AllCops:
+  Exclude:
+    - 'app/javascript/**/*'
+    - 'node_modules/**/*'
+
 # Turning off until we can support multiple enforced styles (key and table). This is available in newer version of rubocop.
 Layout/AlignHash:
   Enabled: false
@@ -15,3 +24,6 @@ Style/BlockDelimiters:
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
