@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'rubocul'
-  spec.version       = '0.0.1'
+  spec.version       = '2.0.0'
   spec.authors       = ['Carla Galarza']
   spec.email         = ['cmg2228@columbia.edu']
 
@@ -13,5 +13,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 2.0'
 
-  spec.add_dependency 'bixby', '2.0.0.pre.beta1'
+  spec.add_dependency 'bixby', '2.0.0'
 end

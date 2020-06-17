@@ -7,7 +7,7 @@ RuboCop defaults for Columbia University Libraries projects.
 Add this line to your Gemfile:
 
 ```ruby
-gem 'rubocul'
+gem 'rubocul', '2.0.0'
 ```
 
 And then execute:
