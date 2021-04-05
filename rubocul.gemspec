@@ -1,8 +1,7 @@
 Gem::Specification.new do |spec|
   spec.name          = 'rubocul'
-  spec.version       = '2.0.0'
-  spec.authors       = ['Carla Galarza']
-  spec.email         = ['cmg2228@columbia.edu']
+  spec.version       = '2.0.1'
+  spec.authors       = ["Carla Galarza", "Eric O'Hanlon"]
 
   spec.summary       = 'A style configuration for Rubocop'
   spec.description   = 'Recommended Rubocop configuration for Ruby projects created by the Columbia University Libraries'
