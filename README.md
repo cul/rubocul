@@ -38,3 +38,7 @@ This project depends on `bixby`, which depends on `rubocop` and `rubocop-rspec`.
 ## Configuration Suggestion
 
 If a member of our team would like to suggest a change to our configuration, please open a github pull request with your change and an explanation of why you think it's necessary/valuable. Please add your new configuration to the `rubocop_default.yml` file.
+
+## Testing
+
+Note that testing of custom rubocop rules is not currently set up for this gem, but is planned for the future.  We have a test in the spec directory that we'll eventually want to run once tests are ready to go.
