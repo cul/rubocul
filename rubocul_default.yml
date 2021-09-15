@@ -5,6 +5,9 @@ inherit_mode:
   merge:
     - Exclude
 
+require:
+ - ./lib/rubocop/cul.rb
+
 AllCops:
   Exclude:
     - 'app/javascript/**/*'
