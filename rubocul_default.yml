@@ -14,11 +14,11 @@ AllCops:
     - 'node_modules/**/*'
 
 # Turning off until we can support multiple enforced styles (key and table). This is available in newer version of rubocop.
-Layout/AlignHash:
+Layout/HashAlignment:
   Enabled: false
 
 # In Rubocop 0.68 (a newer version than we're using right now), the IndentHash rule has been renamed to IndentFirstHashElement.
-Layout/IndentHash:
+Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
 RSpec/MessageSpies:
