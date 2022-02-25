@@ -1,38 +1,69 @@
-inherit_gem:
-  bixby: bixby_default.yml
-
-inherit_mode:
-  merge:
-    - Exclude
-
 require:
- - ./lib/rubocop/cul.rb
+  - rubocop-performance
+  - ./lib/rubocop/cul.rb
 
 AllCops:
+  TargetRubyVersion: 2.7
+  # Disable any new "pending" cops that are introduced in a minor version update of rubocop.
+  # We only want to opt into these explicitly, or accept them when we update to a new MAJOR
+  # version of rubocop. See: https://docs.rubocop.org/rubocop/versioning.html#pending-cops
+  NewCops: disable
+  # DisabledByDefault: true
+  DisplayCopNames: true
   Exclude:
-    - 'app/javascript/**/*'
+    - 'db/**/*'
+    - 'script/**/*'
+    - 'bin/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
     - 'node_modules/**/*'
+    - 'app/javascript/**/*'
 
-# Turning off until we can support multiple enforced styles (key and table). This is available in newer version of rubocop.
+inherit_from:
+  - rubocul_rules_bundler.yml
+  - rubocul_rules_performance.yml
+  - rubocul_rules_rails.yml
+  - rubocul_rules_rspec.yml
+  - rubocul_rules_security.yml
+
 Layout/HashAlignment:
+  SupportedHashRocketStyles:
+    - key
+    - table
+  SupportedColonStyles:
+    - key
+    - table
+
+Style/RedundantSelf:
   Enabled: false
 
-# In Rubocop 0.68 (a newer version than we're using right now), the IndentHash rule has been renamed to IndentFirstHashElement.
+Style/HashSyntax:
+  # We may change this at some point, but it'll take some getting used to. To be safe, we're
+  # forcing explicit hash literal values for now.
+  EnforcedShorthandSyntax: never
+
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
-
-RSpec/MessageSpies:
-  Enabled: false
 
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
 
-Style/RedundantSelf:
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+RSpec/ExpectInHook:
   Enabled: false
 
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
 
-Rails/HasAndBelongsToMany:
+# TODO: Decide how we feel about this later
+Naming/VariableNumber:
   Enabled: false

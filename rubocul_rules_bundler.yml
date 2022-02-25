@@ -1,0 +1,9 @@
+Bundler/DuplicatedGem:
+  Include:
+    - '**/Gemfile'
+    - '**/gems.rb'
+
+Bundler/OrderedGems:
+  Include:
+    - '**/Gemfile'
+    - '**/gems.rb'

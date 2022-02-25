@@ -7,7 +7,7 @@ RuboCop defaults for Columbia University Libraries projects.
 Add this line to your Gemfile:
 
 ```ruby
-gem 'rubocul', '~> 2.0'
+gem 'rubocul', '~> 4.0'
 ```
 
 And then execute:
@@ -21,8 +21,8 @@ inherit_gem:
   rubocul: rubocul_default.yml
 
 AllCops:
-  TargetRubyVersion: 2.5.3  # Update to your version of ruby
-  TargetRailsVersion: 5.2.3 # Update to your version of rails
+  TargetRubyVersion: 3.1.0  # Update to your version of ruby
+  TargetRailsVersion: 7.0.1 # Update to your version of rails
 ```
 
 ## .rubocop_todo.yml
@@ -31,13 +31,10 @@ Understandably, it can be difficult to address all rubocop issues when adding ru
 ```
 rubocop --auto-gen-config  --auto-gen-only-exclude --exclude-limit 10000
 ```
-## Versioning & Dependencies
-
-This project depends on `bixby`, which depends on `rubocop` and `rubocop-rspec`. `bixby` supports versions its dependent gems pessimistically. Therefore we also support version of `bixby` pessimistically. Once we get a release candidate we will match major version numbers with `bixby` major version numbers.
 
 ## Configuration Suggestion
 
-If a member of our team would like to suggest a change to our configuration, please open a github pull request with your change and an explanation of why you think it's necessary/valuable. Please add your new configuration to the `rubocop_default.yml` file.
+If you'd like to propose a change to our configuration, please open a github pull request with the change (in rubocop_default, or the appropriate rubocup_rules_* file) with an explanation of why it would be useful.
 
 ## Testing
 

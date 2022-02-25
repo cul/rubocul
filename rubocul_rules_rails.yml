@@ -1,0 +1,8 @@
+require:
+  - rubocop-rails
+
+Rails:
+  Enabled: true
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
