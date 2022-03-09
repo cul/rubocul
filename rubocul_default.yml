@@ -1,6 +1,12 @@
 require:
-  - rubocop-performance
   - ./lib/rubocop/cul.rb
+
+inherit_from:
+  - rubocul_rules_bundler.yml
+  - rubocul_rules_performance.yml
+  - rubocul_rules_rails.yml
+  - rubocul_rules_rspec.yml
+  - rubocul_rules_security.yml
 
 AllCops:
   TargetRubyVersion: 2.7
@@ -18,13 +24,6 @@ AllCops:
     - 'vendor/**/*'
     - 'node_modules/**/*'
     - 'app/javascript/**/*'
-
-inherit_from:
-  - rubocul_rules_bundler.yml
-  - rubocul_rules_performance.yml
-  - rubocul_rules_rails.yml
-  - rubocul_rules_rspec.yml
-  - rubocul_rules_security.yml
 
 Layout/HashAlignment:
   SupportedHashRocketStyles:
@@ -59,10 +58,6 @@ Style/SymbolArray:
 
 RSpec/ExpectInHook:
   Enabled: false
-
-Metrics/BlockLength:
-  Exclude:
-    - 'spec/**/*'
 
 # TODO: Decide how we feel about this later
 Naming/VariableNumber:
