@@ -33,6 +33,9 @@ Layout/HashAlignment:
     - key
     - table
 
+Metrics/BlockLength:
+  IgnoredMethods: ['describe', 'context']
+
 Style/RedundantSelf:
   Enabled: false
 
