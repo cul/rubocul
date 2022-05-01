@@ -36,6 +36,11 @@ Layout/HashAlignment:
 Metrics/BlockLength:
   IgnoredMethods: ['describe', 'context']
 
+# Documentation is great, but we're not currently forcing people to add a top level comment
+# to all classes and modules.
+Style/Documentation:
+  Enabled: false
+
 Style/RedundantSelf:
   Enabled: false
 
