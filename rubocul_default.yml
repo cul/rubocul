@@ -34,7 +34,11 @@ Layout/HashAlignment:
     - table
 
 Metrics/BlockLength:
-  IgnoredMethods: ['describe', 'context']
+  IgnoredMethods:
+    - 'describe' # rspec
+    - 'context' # rspec
+    - 'namespace' # rake
+    - 'task' # rake
 
 # Documentation is great, but we're not currently forcing people to add a top level comment
 # to all classes and modules.
