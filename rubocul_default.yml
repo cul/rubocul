@@ -34,7 +34,7 @@ Layout/HashAlignment:
     - table
 
 Metrics/BlockLength:
-  IgnoredMethods:
+  AllowedMethods:
     - 'describe' # rspec
     - 'context' # rspec
     - 'namespace' # rake
