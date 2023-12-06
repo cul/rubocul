@@ -40,6 +40,9 @@ Metrics/BlockLength:
     - 'namespace' # rake
     - 'task' # rake
 
+RSpec/NestedGroups:
+  Max: 5
+
 # Documentation is great, but we're not currently forcing people to add a top level comment
 # to all classes and modules.
 Style/Documentation:
