@@ -3,6 +3,7 @@ require:
 
 inherit_from:
   - rubocul_rules_bundler.yml
+  - rubocul_rules_factory_bot.yml
   - rubocul_rules_performance.yml
   - rubocul_rules_rails.yml
   - rubocul_rules_rspec.yml

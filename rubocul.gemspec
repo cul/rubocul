@@ -11,6 +11,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 2.0'
+  # TODO: Add rspec and enable tests
+  #spec.add_development_dependency 'rspec', '~> 3.12'
 
   spec.add_dependency 'rubocop', '~> 1.26'
   spec.add_dependency 'rubocop-ast'
@@ -18,4 +20,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rubocop-rails'
   spec.add_dependency 'rubocop-rspec'
   spec.add_dependency 'rubocop-graphql'
+  spec.add_dependency 'rubocop-factory_bot'
 end
