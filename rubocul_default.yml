@@ -8,6 +8,7 @@ inherit_from:
   - rubocul_rules_rails.yml
   - rubocul_rules_rspec.yml
   - rubocul_rules_security.yml
+  - rubocul_rules_capybara.yml
 
 AllCops:
   TargetRubyVersion: 2.7
@@ -73,6 +74,18 @@ Style/SymbolArray:
   Enabled: false
 
 RSpec/ExpectInHook:
+  Enabled: false
+
+Style/BlockComments:
+  Enabled: false
+
+Rails/RakeEnvironment:
+  Enabled: false
+
+Style/NonNilCheck:
+  Enabled: false
+
+RSpec/ContextWording:
   Enabled: false
 
 # TODO: Decide how we feel about this later
