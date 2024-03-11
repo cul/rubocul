@@ -61,6 +61,12 @@ Style/HashSyntax:
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
+Metrics/MethodLength:
+  Max: 12
+
+Metrics/ParameterLists:
+  Max: 7
+
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
 
