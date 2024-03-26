@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'rubocul'
-  spec.version       = '4.0.10'
+  spec.version       = '4.0.11'
   spec.authors       = ["Eric O'Hanlon", 'Ben Armintor', 'Carla Galarza']
 
   spec.summary       = 'A style configuration for Rubocop'
