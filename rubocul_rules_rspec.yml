@@ -1,14 +1,17 @@
 require:
   - rubocop-rspec
 
-RSpec/MultipleMemoizedHelpers:
+RSpec/ExampleLength:
+  Max: 12
+
+RSpec/MessageSpies:
   Enabled: false
 
 RSpec/MultipleExpectations:
   Max: 3
 
-RSpec/ExampleLength:
-  Max: 10
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
 
-RSpec/MessageSpies:
+RSpec/SubjectStub:
   Enabled: false
